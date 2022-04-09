@@ -7,7 +7,7 @@
         <field name="country" ref="base.ua" />
     </record>
 
-    <record id="res_partner_demo" model="res.partner">
+    <record id="school_lesson_6_1.res_partner_demo" model="res.partner">
         <field name="bank_ids" eval="[Command.create({
             'acc_number': 'UA123450000012345',
             'bank_id': ref('res_bank_1')})]"/>
