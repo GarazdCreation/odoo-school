@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_demo" model="res.partner">
+        <field name="name">Demo Partner</field>
+        <field name="country_id" ref="base.ua"/>
+        <field name="image_1920" type="base64"
+               file="school_lesson_6_1/static/img/partner_demo.png"/>
+        <field name="comment"><![CDATA[<span>-- <br/>
+    This is demo partner.</span>
+]]></field>
+        <field name="active" eval="False"/>
+    </record>
+    
+
+</odoo>

@@ -21,6 +21,7 @@
     ],
     'demo': [
         'data/res_partner_demo.xml',
+        'data/res_partner_bank_demo.xml',
     ],
     'support': 'support@garazd.biz',
     'application': False,
