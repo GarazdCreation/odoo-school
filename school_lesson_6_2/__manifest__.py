@@ -3,11 +3,12 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
 
 {
-    'name': 'School Lesson 6 1',
+    'name': 'School Lesson 6 2',
     'version': '15.0.0.0.1',
     'category': 'Extra Tools',
     'summary': """
-        Odoo School: Lesson 6-1
+        Odoo School
+        Lesson 6-2: Access rights and record rules. 
     """,
     'license': 'OPL-1',
     'author': 'Garazd Creation',
@@ -17,11 +18,7 @@
     ],
     'data': [
         'security/ir.model.access.csv',
-        'data/res_partner_data.xml',
-    ],
-    'demo': [
-        'data/res_partner_demo.xml',
-        'data/res_partner_bank_demo.xml',
+        'security/library_book_groups.xml',
     ],
     'support': 'support@garazd.biz',
     'application': False,

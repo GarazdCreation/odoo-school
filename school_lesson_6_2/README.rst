@@ -1,5 +1,5 @@
 ==========================
-UA Odoo School: Lesson 6-1
+UA Odoo School: Lesson 6-2
 ==========================
 
 Ukranian Odoo Association
