@@ -7,8 +7,7 @@
     'version': '15.0.0.0.1',
     'category': 'Extra Tools',
     'summary': """
-        Odoo School
-        Lesson 6-1: Master and demo data.
+        Odoo School: Lesson 6-1
     """,
     'license': 'OPL-1',
     'author': 'Garazd Creation',

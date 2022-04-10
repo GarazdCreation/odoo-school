@@ -10,10 +10,6 @@ class LibraryBook(models.Model):
         comodel_name='res.partner',
         string='Reader',
     )
-    user_id = fields.Many2one(
-        comodel_name='res.users',
-        string='Responsible',
-    )
 
     def action_assign_default(self):
         self.ensure_one()
