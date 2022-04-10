@@ -13,6 +13,4 @@
             'bank_id': ref('res_bank_1')})]"/>
     </record>
 
-    <delete id="odoo_school.user_pos" model="res.users"/>
-
 </odoo>

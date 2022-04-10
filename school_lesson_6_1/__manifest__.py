@@ -19,6 +19,8 @@
     'data': [
         'security/ir.model.access.csv',
         'data/res_partner_data.xml',
+        'views/library_book_menus.xml',
+        'views/library_book_views.xml',
     ],
     'demo': [
         'data/res_partner_demo.xml',

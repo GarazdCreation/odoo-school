@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="library_author_view_tree" model="ir.ui.view">
+        <field name="name">library.author.view.tree</field>
+        <field name="model">library.author</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="first_name" />
+                <field name="last_name" />
+                <field name="birth_date" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_library_author" model="ir.actions.act_window">
+        <field name="name">Authors</field>
+        <field name="res_model">library.author</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="menu_library_author" model="ir.ui.menu">
+        <field name="name">Authors</field>
+        <field name="parent_id" ref="school_lesson_6_1.menu_library_root"/>
+        <field name="action" ref="action_library_author"/>
+        <field name="sequence" eval="20"/>
+    </record>
+    
+</odoo>

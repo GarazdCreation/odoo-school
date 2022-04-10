@@ -18,7 +18,7 @@
             <field name="name">Administrator</field>
             <field name="category_id" ref="category_library"/>
             <field name="implied_ids" eval="[(4, ref('group_library_user'))]"/>
-            <field name="users" eval="[Command.link(ref('base.user_root'), ref('base.user_admin'), ref('base.user_system'))]"/>
+            <field name="users" eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"/>
             <field name="comment">Administrators of the Library (full rights)</field>
         </record>
 
