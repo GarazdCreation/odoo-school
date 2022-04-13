@@ -8,4 +8,3 @@ class LibraryBook(models.Model):
         comodel_name='library.author',
         string='Author',
     )
-
