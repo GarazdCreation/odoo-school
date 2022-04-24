@@ -14,6 +14,10 @@ class LibraryBook(models.Model):
         comodel_name='res.users',
         string='Responsible',
     )
+    active = fields.Boolean(
+        string='Active',
+        default=True,
+    )
 
     def action_assign_default(self):
         self.ensure_one()
