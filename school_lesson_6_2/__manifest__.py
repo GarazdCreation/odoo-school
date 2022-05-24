@@ -14,7 +14,7 @@
     'author': 'Garazd Creation',
     'website': 'https://garazd.biz',
     'depends': [
-        'base',
+        'school_lesson_6_1',
     ],
     'data': [
         'security/library_book_groups.xml',

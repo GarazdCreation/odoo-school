@@ -13,3 +13,10 @@ class LibraryAuthor(models.Model):
         return [(rec.id, "%s %s" % (
             rec.first_name, rec.last_name)) for rec in self]
 
+    def action_delete(self):
+        self.ensure_one()
+        self.check_access_rights('unlink')
+        self.unlink()
+
+    def _create_by_user(self, vals):
+        return self.sudo().create(vals)
