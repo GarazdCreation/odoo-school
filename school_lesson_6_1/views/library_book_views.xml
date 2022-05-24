@@ -8,6 +8,7 @@
             <tree>
                 <field name="name"/>
                 <field name="reader_id"/>
+                <field name="taken_date" optional="show"/>
                 <field name="user_id" optional="hide"/>
             </tree>
         </field>
@@ -26,12 +27,10 @@
                         <h3><field name="name" placeholder="Name"/></h3>
                     </div>
                     <group>
-                        <group>
-                            <field name="reader_id"/>
-                        </group>
-                        <group>
-                            <field name="user_id" options="{'no_open': True, 'no_create': True}"/>
-                        </group>
+                        <field name="reader_id"/>
+                        <field name="taken_date"/>
+                        <separator colspan="2"/>
+                        <field name="user_id" options="{'no_open': True, 'no_create': True}"/>
                     </group>
                 </sheet>
             </form>
