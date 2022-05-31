@@ -17,6 +17,7 @@
         'school_lesson_6_2',
     ],
     'data': [
+        'views/library_book_views.xml',
     ],
     'support': 'support@garazd.biz',
     'application': False,
