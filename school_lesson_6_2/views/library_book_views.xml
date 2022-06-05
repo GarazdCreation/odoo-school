@@ -27,10 +27,10 @@
                         attrs="{'invisible': [('reader_id', '=', False)]}"
                     />
                     <button
-                        name="action_archive_book"
-                        string="To archive"
+                        name="action_scrap_book"
+                        string="Scrap"
                         type="object"
-                        icon="fa-inbox"
+                        icon="fa-recycle"
                     />
                 </header>
             </xpath>

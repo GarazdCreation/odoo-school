@@ -21,7 +21,7 @@ class LibraryBook(models.Model):
             'taken_date': False,
         })
 
-    def action_archive_book(self):
+    def action_scrap_book(self):
         self.check_access_rule('write')
         self.write({'active': False})
 
