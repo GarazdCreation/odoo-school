@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="author_anniversary_ir_cron" model="ir.cron" forcecreate="True">
+        <field name="name">Library: Calculate author anniversaries</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="model_id" ref="model_library_author"/>
+        <field name="state">code</field>
+        <field name="code">model.calculate_author_anniversary()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+        <field name="nextcall" eval="(datetime.now() + timedelta(days=1)).strftime('%Y-%m-01 00:00:00')"/>
+        <field name="doall" eval="False" />
+        <field name="active" eval="True" />
+    </record>
+
+</odoo>
