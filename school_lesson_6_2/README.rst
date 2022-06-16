@@ -2,7 +2,7 @@
 UA Odoo School: Lesson 6-2
 ==========================
 
-Ukranian Odoo Association
+Ukrainian Odoo Association
 
 Installation
 ============
