@@ -10,7 +10,7 @@
         Odoo School
         Lesson 6-3: Translating. 
     """,
-    'license': 'OPL-1',
+    'license': 'LGPL-3',
     'author': 'Garazd Creation',
     'website': 'https://garazd.biz',
     'depends': [
