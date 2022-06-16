@@ -4,13 +4,13 @@
 
 {
     'name': 'School Lesson 6 5',
-    'version': '15.0.0.0.1',
+    'version': '15.0.1.0.0',
     'category': 'Extra Tools',
     'summary': """
         Odoo School
         Lesson 6-5: Module documentation. 
     """,
-    'license': 'OPL-1',
+    'license': 'LGPL-3',
     'author': 'Garazd Creation',
     'website': 'https://garazd.biz',
     'depends': [
