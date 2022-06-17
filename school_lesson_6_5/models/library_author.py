@@ -26,7 +26,7 @@ class LibraryAuthor(models.Model):
             ('birth_date', '!=', False)])
         for author in authors:
             # Get only those authors whose century anniversary
-            # is in the  current month
+            # is in the current month
             if (fields.Date.today().year - author.birth_date.year) % 100 and \
                     fields.Date.today().month == author.birth_date.month:
                 self.env['mail.activity'].create({
@@ -43,3 +43,17 @@ class LibraryAuthor(models.Model):
                         author.birth_date.month,
                         author.birth_date.day))
                 })
+
+    def get_bk_cnt(self):
+        """This sample method shows a BAD approach for naming."""
+        self.ensure_one()
+        bc = self.env['library.book'].search_count([
+            ('author_id', '=', self.id)])
+        return bc
+
+    def get_book_count(self):
+        """This sample method shows GOOD approach for naming."""
+        self.ensure_one()
+        book_count = self.env['library.book'].search_count([
+            ('author_id', '=', self.id)])
+        return book_count
