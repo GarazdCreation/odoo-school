@@ -17,7 +17,7 @@
                 <sheet>
                     <div class="oe_title">
                         <h3>
-                            <field name="first_name" placeholder="First Name"/>
+                            <field name="first_name" placeholder="First Name" class="mr8"/>
                             <field name="last_name" placeholder="Last Name"/>
                         </h3>
                     </div>
