@@ -25,7 +25,9 @@ class LibraryAuthor(models.Model):
         authors = self.env['library.author'].search([
             ('birth_date', '!=', False)])
         for author in authors:
-            if (fields.Date.today().year - author.birth_date.year) == 100 and \
+            # Get only those authors whose century anniversary
+            # is in the  current month
+            if (fields.Date.today().year - author.birth_date.year) % 100 and \
                     fields.Date.today().month == author.birth_date.month:
                 self.env['mail.activity'].create({
                     'res_model_id': self.env.ref(
