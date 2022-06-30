@@ -14,7 +14,11 @@
     'depends': [
         'school_lesson_6_5',
     ],
+    'price': 10.0,
+    'currency': 'USD',
+    'live_test_url': 'https://demo.odoo.com/odoo-school',
     'support': 'support@garazd.biz',
+    'images': ['static/description/banner.png', 'static/description/icon.png'],
     'application': False,
     'installable': True,
     'auto_install': False,
