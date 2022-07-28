@@ -8,7 +8,7 @@
     'category': 'Extra Tools',
     'summary': """
         Odoo School
-        Lesson 6-1: Master and demo data.
+        Lesson 6-1: Master and demo data. Testing the work of git commands from lesson 1-4
     """,
     'license': 'LGPL-3',
     'author': 'Garazd Creation',
