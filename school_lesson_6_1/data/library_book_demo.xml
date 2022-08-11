@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<odoo noupdate="1">
-    <record id="library_book_mar_churay" model="library_book">
+<odoo>
+    <record id="library_book_mar_churay" model="library.book">
         <field name="name">Маруся Чурай</field>
-        <field name="category_id" ref="library_book_category_historical"/>
+        <field name="category_id" ref="school_lesson_6_1.lbc_historical"/>
     </record>
-    <record id="library_book_poklyk" model="library_book">
+    <record id="library_book_poklyk" model="library.book">
         <field name="name">Поклик предків</field>
-        <field name="category_id" ref="library_book_category_adventures"/>
+        <field name="category_id" ref="school_lesson_6_1.lbc_adventures"/>
     </record>
-    <record id="library_book_20_tluv" model="library_book">
+    <record id="library_book_20_tluv" model="library.book">
         <field name="name">Двадцять тисяч льє під водою</field>
-        <field name="category_id" ref="library_book_category_adventures"/>
+        <field name="category_id" ref="school_lesson_6_1.lbc_adventures"/>
     </record>
 </odoo>

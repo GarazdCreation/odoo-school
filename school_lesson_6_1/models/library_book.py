@@ -16,7 +16,6 @@ class LibraryBook(models.Model):
         string='Responsible',
     )
     active = fields.Boolean(
-        string='Active',
         default=True,
     )
     category_id = fields.Many2one(
@@ -33,4 +32,3 @@ class LibraryBook(models.Model):
             'school_lesson_6_1.res_partner_customer').id
         self.user_id = self.env.ref(
             'base.user_demo').id
-

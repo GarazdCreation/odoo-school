@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo noupdate="1">
-    <record id="library_book_poklyk" model="library_book">
-        <field name="name" ref="Поклик предків (змінено)"/>
+    <record id="school_lesson_6_1.library_book_poklyk" model="library.book">
+        <field name="name">Поклик предків (змінено)</field>
     </record>
-    <delete id="library_book_20_tluv" model="library_book"/>
+    <delete id="school_lesson_6_1.library_book_20_tluv" model="library.book"/>
 </odoo>

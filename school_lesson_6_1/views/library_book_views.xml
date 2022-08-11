@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="category_id"/>
                 <field name="reader_id"/>
                 <field name="taken_date" optional="show"/>
                 <field name="user_id" optional="hide"/>
@@ -27,6 +28,7 @@
                         <h3><field name="name" placeholder="Name"/></h3>
                     </div>
                     <group>
+                        <field name="category_id"/>
                         <field name="reader_id"/>
                         <field name="taken_date"/>
                         <separator colspan="2"/>
