@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+    <record id="library_book_category_adventures" model="library.book.category" forcecreate="True">
+        <field name="name">Пригоди</field>
+    </record>
+    <record id="library_book_category_historical" model="library.book.category" forcecreate="True">
+        <field name="name">Історичні</field>
+    </record>
+    <record id="library_book_category_poetry" model="library.book.category" forcecreate="True">
+        <field name="name">Поезія</field>
+    </record>
+</odoo>
