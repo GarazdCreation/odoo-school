@@ -13,6 +13,12 @@
             <field name="category_id" ref="category_library"/>
             <field name="comment">Users of the Library</field>
         </record>
+        
+        <record id="group_library_trainee" model="res.groups">
+            <field name="name">Trainee</field>
+            <field name="category_id" ref="category_library"/>
+            <field name="comment">Trainee users of the Library</field>
+        </record>
 
         <record id="group_library_admin" model="res.groups">
             <field name="name">Administrator</field>
