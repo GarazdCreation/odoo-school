@@ -9,7 +9,7 @@ class LibraryAuthor(models.Model):
     first_name = fields.Char(required=True)
     last_name = fields.Char(required=True)
     birth_date = fields.Date('Birthday')
-    is_access_trainee = fields.Boolean('Has trainee access?',
+    is_trainee_access = fields.Boolean('Has trainee access?',
                                        compute="_compute_access_trainee")
 
     def name_get(self):
