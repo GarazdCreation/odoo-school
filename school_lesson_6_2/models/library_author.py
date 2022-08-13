@@ -6,8 +6,8 @@ class LibraryAuthor(models.Model):
     _name = 'library.author'
     _description = 'Library Book Authors'
 
-    first_name = fields.Char(required=True)
-    last_name = fields.Char(required=True)
+    first_name = fields.Char(required=True, translate=True)
+    last_name = fields.Char(required=True, translate=True)
     birth_date = fields.Date('Birthday')
     is_trainee_access = fields.Boolean('Has trainee access?',
                                        compute="_compute_access_trainee")
