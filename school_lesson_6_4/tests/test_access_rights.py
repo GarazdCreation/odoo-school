@@ -12,6 +12,10 @@ class TestAccessRights(TestCommon):
                 {'name': 'Test Book'})
         with self.assertRaises(AccessError):
             self.book_demo.with_user(self.library_user).unlink()
+        with self.assertRaises(AccessError):
+            self.env['library.author'].with_user(self.library_user).create(
+                {'first_name': 'Test Author Name', 
+                'last_name':'Test Author Last name'})
 
     def test_02_library_admin_access_rights(self):
         book = self.env['library.book'].with_user(self.library_admin).create(

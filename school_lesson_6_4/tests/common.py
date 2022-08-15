@@ -24,3 +24,11 @@ class TestCommon(TransactionCase):
         self.reader = self.env['res.partner'].create({'name': 'Demo Reader'})
         self.book_demo = self.env['library.book'].create({
             'name': 'Demo Book'})
+
+    @classmethod
+    def setUpClass(self):
+        super(TestCommon, self).setUpClass()
+        self.library_author = self.env['library.author'].create({
+            'first_name': 'Mark',
+            'last_name': 'Twain'
+        })
