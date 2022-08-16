@@ -16,6 +16,7 @@
             </form>
         </field>
     </record>
+
     <record id="library_book_category_view_tree" model="ir.ui.view">
         <field name="name">library.book.category.view.tree</field>
         <field name="model">library.book.category</field>
@@ -25,11 +26,13 @@
             </tree>
         </field>
     </record>
+
     <record id="library_book_category_action" model="ir.actions.act_window">
         <field name="name">Books Categories</field>
         <field name="res_model">library.book.category</field>
         <field name="view_mode">tree,form</field>
     </record>
+
     <record id="library_book_category_menu" model="ir.ui.menu">
         <field name="name">Books Categories</field>
         <field name="parent_id" ref="menu_library_root"/>
