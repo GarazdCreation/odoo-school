@@ -4,15 +4,15 @@
 
 {
     'name': 'School Lesson 6 3',
-    'version': '15.0.0.0.1',
+    'version': '15.0.1.0.2',
     'category': 'Extra Tools',
     'summary': """
         Odoo School
         Lesson 6-3: Translating. 
     """,
     'license': 'LGPL-3',
-    'author': 'Garazd Creation',
-    'website': 'https://garazd.biz',
+    'author': 'Andrii Zemlianyi',
+    'website': 'https://yava.net.ua',
     'depends': [
         'school_lesson_6_2',
     ],
@@ -21,7 +21,7 @@
         'views/library_book_category_views.xml',
         'views/library_author_views.xml',
     ],
-    'support': 'support@garazd.biz',
+    'support': 'Andrey.Zemlyanoy@gmail.com',
     'application': False,
     'installable': True,
     'auto_install': False,
