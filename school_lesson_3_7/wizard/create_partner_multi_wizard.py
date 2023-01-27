@@ -1,3 +1,7 @@
+# Copyright © 2022 Garazd Creation (<https://garazd.biz>)
+# @author: Yurii Razumovskyi (<support@garazd.biz>)
+# License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
+
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 

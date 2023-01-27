@@ -12,7 +12,7 @@ class LibraryAuthor(models.Model):
         """Determine author anniversaries for the current month.
         If the anniversary is in the current month an activity will be created.
 
-        :param notify_type: can have two value "todo" or "meeting",
+        :param notify_type: can have two value todo or meeting,
                             determine which activity type to create.
         :return None:
         """
