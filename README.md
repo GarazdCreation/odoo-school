@@ -1,2 +1,2 @@
 # odoo-school
-
+# traning
