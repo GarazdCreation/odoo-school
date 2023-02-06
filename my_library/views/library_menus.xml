@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="library_menu_root"
+              name="Library"
+              web_icon="library,static/description/icon.png"
+              sequence="1"/>
+
+</odoo>

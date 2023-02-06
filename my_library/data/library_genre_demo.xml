@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="library_genre_prose_demo" model="library.genre">
+        <field name="name">Prose</field>
+    </record>
+    <record id="library_genre_journalism_demo" model="library.genre">
+        <field name="name">Journalism</field>
+    </record>
+    <record id="library_genre_poetry_demo" model="library.genre">
+        <field name="name">Poetry</field>
+    </record>
+
+</odoo>
+
