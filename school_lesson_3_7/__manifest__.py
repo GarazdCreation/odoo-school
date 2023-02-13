@@ -7,7 +7,7 @@
     'version': '15.0.0.0.1',
     'category': 'Extra Tools',
     'summary': """
-        Odoo School
+        Garazd Odoo School
         Lesson 3-7: Wizards. Temporary models. 
     """,
     'license': 'LGPL-3',
