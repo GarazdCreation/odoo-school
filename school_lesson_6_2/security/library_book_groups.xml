@@ -14,10 +14,17 @@
             <field name="comment">Users of the Library</field>
         </record>
 
+        <record id="group_library_trainee" model="res.groups">
+            <field name="name">Trainee</field>
+            <field name="category_id" ref="category_library"/>
+            <field name="implied_ids" eval="[(4, ref('group_library_user'))]"/>
+            <field name="comment">Trainee of the Library</field>
+        </record>
+
         <record id="group_library_admin" model="res.groups">
             <field name="name">Administrator</field>
             <field name="category_id" ref="category_library"/>
-            <field name="implied_ids" eval="[(4, ref('group_library_user'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_library_trainee'))]"/>
             <field name="users" eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"/>
             <field name="comment">Administrators of the Library (full rights)</field>
         </record>
