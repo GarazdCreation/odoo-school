@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="library_book_category_historical_novel" model="library.book.category" forcecreate="True">
+        <field name="name">Historical novel</field>
+    </record>
+    <record id="library_book_category_adventure_novel" model="library.book.category" forcecreate="True">
+        <field name="name">Adventure novel</field>
+    </record>
+    <record id="library_book_category_science_fiction_novel" model="library.book.category" forcecreate="True">
+        <field name="name">Science fiction adventure novel</field>
+    </record>
+    
+</odoo>

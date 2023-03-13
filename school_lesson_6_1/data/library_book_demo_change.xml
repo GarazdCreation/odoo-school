@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="school_lesson_6_1.library_book_the_call_of_the_wild" model="library.book">
+        <field name="name">Поклик предків (англ. The Call of the Wild) </field>
+    </record>
+
+    <delete id="school_lesson_6_1.library_book_twenty_thousand_lei_underwater" model="library.book"/>
+
+</odoo>

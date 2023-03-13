@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="library_book_marusya_churay" model="library.book">
+        <field name="name">Маруся Чурай</field>
+        <field name="category_id" ref="school_lesson_6_1.library_book_category_historical_novel"/>
+        <field name="user_id" ref="base.user_demo"/>
+    </record>
+    <record id="library_book_the_call_of_the_wild" model="library.book">
+        <field name="name">Поклик предків</field>
+        <field name="category_id" ref="school_lesson_6_1.library_book_category_adventure_novel"/>
+        <field name="user_id" ref="base.user_demo"/>
+    </record>
+    <record id="library_book_twenty_thousand_lei_underwater" model="library.book">
+        <field name="name">Двадцять тисяч льє під водою</field>
+        <field name="category_id" ref="school_lesson_6_1.library_book_category_science_fiction_novel"/>
+        <field name="user_id" ref="base.user_demo"/>
+    </record>
+
+</odoo>
