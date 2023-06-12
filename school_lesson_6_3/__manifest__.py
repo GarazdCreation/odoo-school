@@ -8,7 +8,7 @@
     'category': 'Extra Tools',
     'summary': """
         Odoo School
-        Lesson 6-3: Translating. 
+        Lesson 6-3: Translating. Testing the work of git commands from lesson 1-4
     """,
     'license': 'LGPL-3',
     'author': 'Garazd Creation',
