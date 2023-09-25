@@ -23,3 +23,7 @@
     'installable': True,
     'auto_install': False,
 }
+
+#
+# test TASK-1.4
+#
