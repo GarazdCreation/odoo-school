@@ -8,7 +8,7 @@
     'category': 'Extra Tools',
     'summary': """
         Odoo School
-        Lesson 6-1: Master and demo data.
+        Lesson 6-1: Master and demo data. Operation with external IDs.
     """,
     'license': 'LGPL-3',
     'author': 'Garazd Creation',
