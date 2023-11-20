@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="category_historical_novel" model="library.book.category">
+        <field name="name">Historical Novel</field>
+    </record>
+    <record id="category_fiction" model="library.book.category">
+        <field name="name">Fiction</field>
+    </record>
+    <record id="category_scifi" model="library.book.category">
+        <field name="name">Science Fiction</field>
+    </record>
+</odoo>

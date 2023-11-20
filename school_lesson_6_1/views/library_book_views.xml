@@ -31,6 +31,7 @@
                         <field name="taken_date"/>
                         <separator colspan="2"/>
                         <field name="user_id" options="{'no_open': True, 'no_create': True}"/>
+                        <field name="category_id" placeholder="Select a category"/>
                     </group>
                 </sheet>
             </form>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="book_marysia_churai" model="library.book">
+        <field name="name">Маруся Чурай</field>
+        <field name="category_id" ref="category_historical_novel"/>
+    </record>
+    <record id="book_call_of_ancestors" model="library.book">
+        <field name="name">Поклик предків</field>
+        <field name="category_id" ref="category_fiction"/>
+    </record>
+    <record id="book_twenty_thousand_leagues" model="library.book">
+        <field name="name">Двадцять тисяч льє під водою</field>
+        <field name="category_id" ref="category_scifi"/>
+    </record>
+
+    <record id="book_call_of_ancestors" model="library.book">
+        <field name="name">New Name</field>
+    </record>
+
+    <delete id="school_lesson_6_1.book_twenty_thousand_leagues" model="library.book"/>
+</odoo>
