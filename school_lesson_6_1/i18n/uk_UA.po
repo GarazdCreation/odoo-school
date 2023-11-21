@@ -1,0 +1,125 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school_lesson_6_1
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 08:53+0000\n"
+"PO-Revision-Date: 2023-11-21 08:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__active
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__active
+msgid "Active"
+msgstr "Активний"
+
+#. module: school_lesson_6_1
+#: model:ir.actions.act_window,name:school_lesson_6_1.action_library_book
+#: model:ir.ui.menu,name:school_lesson_6_1.menu_library_book
+msgid "Books"
+msgstr "Книги"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__category_id
+msgid "Category"
+msgstr "Категорія"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__name
+msgid "Category Name"
+msgstr "Назва категорії"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__create_uid
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__create_uid
+msgid "Created by"
+msgstr "Створений"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__create_date
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__create_date
+msgid "Created on"
+msgstr "Створено на"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__display_name
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__display_name
+msgid "Display Name"
+msgstr "Відображуване ім'я"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__id
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__taken_date
+msgid "In use from"
+msgstr "У користуванні від"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book____last_update
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category____last_update
+msgid "Last Modified on"
+msgstr "Востаннє змінено"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__write_uid
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновлено"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__write_date
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book_category__write_date
+msgid "Last Updated on"
+msgstr "Востаннє оновлено"
+
+#. module: school_lesson_6_1
+#: model:ir.ui.menu,name:school_lesson_6_1.menu_library_root
+msgid "Library"
+msgstr "Бібліотека"
+
+#. module: school_lesson_6_1
+#: model:ir.model,name:school_lesson_6_1.model_library_book_category
+msgid "Library Book Category"
+msgstr "Бібліотека категорій"
+
+#. module: school_lesson_6_1
+#: model:ir.model,name:school_lesson_6_1.model_library_book
+msgid "Library Books"
+msgstr "Бібліотека книг"
+
+#. module: school_lesson_6_1
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_1.library_book_view_form
+msgid "Name"
+msgstr "Ім'я"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__reader_id
+msgid "Reader"
+msgstr "Читач"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__user_id
+msgid "Responsible"
+msgstr "Відповідальний"
+
+#. module: school_lesson_6_1
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_1.library_book_view_form
+msgid "Select a category"
+msgstr "Обрати категорію"
+
+#. module: school_lesson_6_1
+#: model:ir.model.fields,field_description:school_lesson_6_1.field_library_book__name
+msgid "Title"
+msgstr "Заголовок"

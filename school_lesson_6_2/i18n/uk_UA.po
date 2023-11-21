@@ -1,0 +1,149 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school_lesson_6_2
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 09:07+0000\n"
+"PO-Revision-Date: 2023-11-21 09:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_lesson_6_2
+#: model:res.groups,name:school_lesson_6_2.group_library_admin
+msgid "Administrator"
+msgstr "Адміністратор"
+
+#. module: school_lesson_6_2
+#: model:res.groups,comment:school_lesson_6_2.group_library_admin
+msgid "Administrators of the Library (full rights)"
+msgstr "Адміністратори бібліотеки (повні права)"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_book__author_id
+msgid "Author"
+msgstr "Автор"
+
+#. module: school_lesson_6_2
+#: model:ir.actions.act_window,name:school_lesson_6_2.action_library_author
+#: model:ir.ui.menu,name:school_lesson_6_2.menu_library_author
+msgid "Authors"
+msgstr "Автори"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__birth_date
+msgid "Birthday"
+msgstr "День народження"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__create_uid
+msgid "Created by"
+msgstr "Створений"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__create_date
+msgid "Created on"
+msgstr "Створити"
+
+#. module: school_lesson_6_2
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_author_view_form
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__display_name
+msgid "Display Name"
+msgstr "Відображуване ім'я"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__first_name
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_author_view_form
+msgid "First Name"
+msgstr "Ім'я"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__id
+msgid "ID"
+msgstr "ID"
+
+#. module: school_lesson_6_2
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_book_view_form
+msgid "Jules Verne"
+msgstr "Жюль Верн"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author____last_update
+msgid "Last Modified on"
+msgstr "Останнє оновлення"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__last_name
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_author_view_form
+msgid "Last Name"
+msgstr "Прізвище"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновлено"
+
+#. module: school_lesson_6_2
+#: model:ir.model.fields,field_description:school_lesson_6_2.field_library_author__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: school_lesson_6_2
+#: model:ir.module.category,name:school_lesson_6_2.category_library
+msgid "Library"
+msgstr "Бібліотека"
+
+#. module: school_lesson_6_2
+#: model:ir.model,name:school_lesson_6_2.model_library_author
+msgid "Library Book Authors"
+msgstr "Бібліотека авторів"
+
+#. module: school_lesson_6_2
+#: model:ir.model,name:school_lesson_6_2.model_library_book
+msgid "Library Books"
+msgstr "Бібліотека книг"
+
+#. module: school_lesson_6_2
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_book_view_form
+msgid "Scrap"
+msgstr "Уривок"
+
+#. module: school_lesson_6_2
+#: model_terms:ir.ui.view,arch_db:school_lesson_6_2.library_book_view_form
+msgid "Take in book"
+msgstr "Приймати книгу"
+
+#. module: school_lesson_6_2
+#: model:res.groups,name:school_lesson_6_2.group_library_trainee
+msgid "Trainee"
+msgstr "Стажер"
+
+#. module: school_lesson_6_2
+#: model:res.groups,comment:school_lesson_6_2.group_library_trainee
+msgid "Trainee users with limited access rights"
+msgstr "Стажери з обмеженими правами доступу"
+
+#. module: school_lesson_6_2
+#: model:res.groups,name:school_lesson_6_2.group_library_user
+msgid "User"
+msgstr "Користувач"
+
+#. module: school_lesson_6_2
+#: model:ir.module.category,description:school_lesson_6_2.category_library
+msgid "User access levels for the Library"
+msgstr "Рівні доступу користувачів до бібліотеки"
+
+#. module: school_lesson_6_2
+#: model:res.groups,comment:school_lesson_6_2.group_library_user
+msgid "Users of the Library"
+msgstr "Користувачі бібліотеки"
