@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="library_book_category_view_tree" model="ir.ui.view">
+        <field name="name">library.book.category.view.tree</field>
+        <field name="model">library.book.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="library_book_category_view_form" model="ir.ui.view">
+        <field name="name">library.book.category.view.form</field>
+        <field name="model">library.book.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button string="Show Books" type="object"
+                            name="get_books_list"
+                            class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="book_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_library_book_category" model="ir.actions.act_window">
+        <field name="name">Book Category</field>
+        <field name="res_model">library.book.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="menu_library_book_category" model="ir.ui.menu">
+        <field name="name">Book Categories</field>
+        <field name="parent_id" ref="school_lesson_6_1.menu_library_root"/>
+        <field name="action" ref="action_library_book_category"/>
+        <field name="sequence" eval="11"/>
+    </record>
+
+</odoo>

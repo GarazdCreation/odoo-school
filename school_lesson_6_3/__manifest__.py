@@ -19,6 +19,7 @@
     'data': [
         'views/library_book_views.xml',
         'views/library_author_views.xml',
+        'views/library_book_category_views.xml',
     ],
     'support': 'support@garazd.biz',
     'application': False,
