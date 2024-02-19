@@ -1,5 +1,0 @@
-id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-access_library_author_user,access_library_author_user,model_library_author,base.group_user,1,0,0,0
-access_library_author_system,access_library_author_system,model_library_author,base.group_system,1,1,1,1
-access_library_book_library_user,access_library_book_library_user,model_library_book,school_lesson_6_2.group_library_user,1,1,0,0
-access_library_book_library_admin,access_library_book_library_admin,model_library_book,school_lesson_6_2.group_library_admin,1,1,1,1
