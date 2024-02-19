@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="social_subscriber_view_form" model="ir.ui.view">
+        <field name="name">social.subscriber.view.form</field>
+        <field name="model">social.subscriber</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="social_service" widget="radio" options="{'horizontal': true}"/>
+                        </group>
+                        <group>
+                            <field name="email"/>
+                            <field name="country_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="social_subscriber_view_tree" model="ir.ui.view">
+        <field name="name">social.subscriber.view.tree</field>
+        <field name="model">social.subscriber</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="social_service"/>
+                <field name="name"/>
+                <field name="email" optional="hide"/>
+                <field name="birthday" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_social_subscriber_list" model="ir.actions.act_window">
+        <field name="type">ir.actions.act_window</field>
+        <field name="name">Social Subscribers</field>
+        <field name="res_model">social.subscriber</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_social_subscribers"
+        name="Subscribers"
+        action="action_social_subscriber_list"
+        parent="contacts.menu_contacts"
+        sequence="10"/>
+
+    <!-- Rewrite a sequence for the "Configuration" menu in the Contacts app -->
+    <record id="contacts.res_partner_menu_config" model="ir.ui.menu">
+        <field name="sequence" eval="100"/>
+    </record>
+
+</odoo>

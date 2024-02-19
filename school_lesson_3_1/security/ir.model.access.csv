@@ -1,2 +1,3 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_partner_mass_edit_user,access_partner_mass_edit_user,model_partner_mass_edit,base.group_user,1,1,1,1
+access_social_subscriber_user,access_social_subscriber_user,model_social_subscriber,base.group_user,1,1,1,1

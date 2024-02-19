@@ -6,10 +6,7 @@
     'name': 'School Lesson 3-1: Models',
     'version': '17.0.1.0.0',
     'category': 'Extra Tools',
-    'summary': """
-        Odoo School
-        Lesson 3-1: Models. Inheritance. Abstract and Transient models. 
-    """,
+    'summary': """Odoo School Lesson 3-1: Models. Inheritance. Abstract and Transient models.""",
     'license': 'LGPL-3',
     'author': 'Garazd Creation',
     'website': 'https://garazd.biz',
@@ -19,6 +16,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/res_partner_views.xml',
+        'views/social_subscriber_views.xml',
         'wizard/partner_mass_edit_views.xml',
     ],
     'support': 'support@garazd.biz',
