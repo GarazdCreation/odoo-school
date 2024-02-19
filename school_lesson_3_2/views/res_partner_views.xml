@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.school_lesson_3_2</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="school_lesson_3_1.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <field name="client_state" widget="statusbar" options="{'clickable': '0'}"/>
+                </header>
+            </xpath>
+            <xpath expr="//field[@name='age']" position="after">
+                <field name="gender"/>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="client_currency_id"/>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="join_date"/>
+                <field name="is_verified" widget="boolean_toggle"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
