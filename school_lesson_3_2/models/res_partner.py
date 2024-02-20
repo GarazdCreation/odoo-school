@@ -30,6 +30,7 @@ class ResPartner(models.Model):
         ],
         string='Client Status',
         compute='_compute_client_state',
+        group_operator='count',
         store=True,
     )
     client_currency_id = fields.Many2one(

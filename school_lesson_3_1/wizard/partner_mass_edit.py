@@ -4,6 +4,8 @@ from odoo import fields, models
 class PartnerMassEdit(models.TransientModel):
     _name = "partner.mass.edit"
     _description = 'Wizard for mass editing of partners'
+    _transient_max_count = 1000
+    _transient_max_hours = 3
 
     partner_ids = fields.Many2many(
         comodel_name='res.partner',
