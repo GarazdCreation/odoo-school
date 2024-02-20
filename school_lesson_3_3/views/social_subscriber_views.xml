@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="social_subscriber_view_form" model="ir.ui.view">
+        <field name="name">social.subscriber.view.form.inherit.school_lesson_3_3</field>
+        <field name="model">social.subscriber</field>
+        <field name="inherit_id" ref="school_lesson_3_1.social_subscriber_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <field name="state" widget="statusbar" options="{'clickable': '1'}" statusbar_visible="new,registered"/>
+                </header>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_title')]" position="before">
+                <field name="photo" widget='image' class="oe_avatar" options='{"preview_image": "photo"}'/>
+                <field name="client_currency_id" invisible="1"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Fields" name="regular_fields">
+                    <group>
+                        <group>
+                            <field name="nickname"/>
+                            <field name="is_confirmed" widget="boolean_toggle"/>
+                            <field name="start_date" string="Period" widget="daterange" options="{'end_date_field': 'end_date'}" required="start_date or end_date" />
+                            <field name="end_date" invisible="1" required="start_date"/>
+                        </group>
+                        <group>
+                            <field name="client_bonus" widget="monetary" options="{'field_digits': True}"/>
+                            <field name="passport"/>
+                        </group>
+                    </group>
+                    <separator string="Notes"/>
+                    <field name="notes" widget="text"/>
+                </page>
+                <page string="Profile" name="html_field">
+                    <field name="profile" widget="html" options="{'codeview': True}" class="oe-bordered-editor"/>
+                </page>
+                <page string="Service Fields" name="service_fields">
+                    <group>
+                        <field name="id"/>
+                        <field name="create_date"/>
+                        <field name="create_uid"/>
+                        <field name="write_date"/>
+                        <field name="write_uid"/>
+                    </group>
+                </page>
+                <page string="Reserved Fields" name="reserved_fields">
+                    <group>
+                        <field name="active"/>
+                        <field name="state" readonly="1"/>
+                        <field name="sequence"/>
+                        <field name="parent_id" readonly="True"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="social_subscriber_view_tree" model="ir.ui.view">
+        <field name="name">social.subscriber.view.tree</field>
+        <field name="model">social.subscriber</field>
+        <field name="inherit_id" ref="school_lesson_3_1.social_subscriber_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="sequence" widget="handle"/>
+            </xpath>
+            <xpath expr="//field[@name='birthday']" position="after">
+                <field name="state"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
