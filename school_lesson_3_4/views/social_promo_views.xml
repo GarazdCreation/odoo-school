@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="social_promo_view_tree" model="ir.ui.view">
+        <field name="name">social.promo.view.tree</field>
+        <field name="model">social.promo</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name"/>
+                <field name="subscriber_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_social_promo_list" model="ir.actions.act_window">
+        <field name="type">ir.actions.act_window</field>
+        <field name="name">Social Promotions</field>
+        <field name="res_model">social.promo</field>
+        <field name="view_mode">tree</field>
+    </record>    
+    
+   <menuitem id="menu_social_promotions"
+        name="Promotions"
+        action="action_social_promo_list"
+        parent="menu_social_config"
+        sequence="10"
+   />
+
+</odoo>

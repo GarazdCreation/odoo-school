@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_social_config"
+        name="Social"
+        parent="contacts.res_partner_menu_config"
+        sequence="50"
+    />
+
+</odoo>
