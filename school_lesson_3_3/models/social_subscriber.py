@@ -18,10 +18,9 @@ class SocialSubscriber(models.Model):
     client_bonus = fields.Monetary(
         string='Bonus Amount',
         currency_field='client_currency_id',
-        digits=(16, 2),
         readonly=True,
     )
-    notes = fields.Text(translate=True)
+    notes = fields.Text(string='Description', translate=True)
     profile = fields.Html(sanitize=True)
     passport = fields.Binary(attachment=True)
     photo = fields.Image(

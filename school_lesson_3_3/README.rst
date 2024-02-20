@@ -1,8 +1,8 @@
 ==========================
-UA Odoo School: Lesson 3-2
+UA Odoo School: Lesson 3-3
 ==========================
 
-Model Fields in Odoo. Field Parameters. Computed fields.
+Model Field Types in Odoo. Reserved and special fields.
 
 
 Installation

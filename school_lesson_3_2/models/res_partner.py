@@ -35,7 +35,7 @@ class ResPartner(models.Model):
     )
     client_currency_id = fields.Many2one(
         related='country_id.currency_id',
-        string='Currency',
+        string='Local Currency',
     )
 
     @api.depends('join_date')
