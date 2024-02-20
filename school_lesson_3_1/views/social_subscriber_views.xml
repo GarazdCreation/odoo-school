@@ -13,12 +13,14 @@
                     <group>
                         <group>
                             <field name="social_service" widget="radio" options="{'horizontal': true}"/>
+                            <field name="birthday"/>
                         </group>
                         <group>
                             <field name="email"/>
                             <field name="country_id"/>
                         </group>
                     </group>
+                    <notebook/>
                 </sheet>
             </form>
         </field>
@@ -29,8 +31,8 @@
         <field name="model">social.subscriber</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="social_service"/>
                 <field name="name"/>
+                <field name="social_service"/>
                 <field name="email" optional="hide"/>
                 <field name="birthday" optional="show"/>
             </tree>

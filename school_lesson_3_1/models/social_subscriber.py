@@ -12,10 +12,12 @@ class SocialSubscriber(models.Model):
     )
     social_service = fields.Selection(
         selection=[
+            ('undefined', 'Undefined'),
             ('instagram', 'Instagram'),
             ('tiktok', 'TikTok'),
             ('youtube', 'YouTube'),
         ],
+        default='undefined',
         required=True,
     )
 
