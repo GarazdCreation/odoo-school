@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="social_subscriber_view_tree" model="ir.ui.view">
+        <field name="name">social.subscriber.view.tree.inherit.school_lesson_3_5</field>
+        <field name="model">social.subscriber</field>
+        <field name="inherit_id" ref="school_lesson_3_3.social_subscriber_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="display_name" string="Name"/>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
