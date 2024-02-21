@@ -15,18 +15,6 @@
                         <group string="Many2many">
                             <field name="language_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
                         </group>
-                        <group string="Reference">
-                            <label for="any_record_ref"/>
-                            <div class="o_row">
-                                <field name="any_record_ref"/>
-                            </div>
-                        </group>
-                        <group string="Many2one-Reference">
-<!--                            <field name="res_name"/>-->
-                            <field name="res_model_id" options="{'no_open': True, 'no_create': True}"/>
-                            <field name="res_id"/>
-                            <field name="resource_ref" widget="reference" string="Record"/>
-                        </group>
                     </group>
                     <separator string="One2many"/>
                     <button name="action_remove_promo"
@@ -42,6 +30,19 @@
                             <field name="name"/>
                         </tree>
                     </field>
+                    <group>
+                        <group string="Reference">
+                            <label for="any_record_ref"/>
+                            <div class="o_row">
+                                <field name="any_record_ref"/>
+                            </div>
+                        </group>
+                        <group string="Many2one-Reference">
+                            <field name="res_model_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="res_id"/>
+                            <field name="resource_ref" widget="reference" string="Record"/>
+                        </group>
+                    </group>
                 </page>
             </xpath>
         </field>
