@@ -3,6 +3,7 @@ from odoo import fields, models
 
 class SocialSubscriber(models.Model):
     _inherit = 'social.subscriber'
+    _order = 'sequence'
 
     sequence = fields.Integer(default=100)
     nickname = fields.Char(size=8, trim=False, translate=False)
@@ -14,11 +15,12 @@ class SocialSubscriber(models.Model):
         string='Status',
         default='new',
     )
-    is_confirmed = fields.Boolean(string='Contact is Confirmed')
+    is_confirmed = fields.Boolean(string='Contact is Confirmed', readonly=True)
     client_bonus = fields.Monetary(
         string='Bonus Amount',
         currency_field='client_currency_id',
         readonly=True,
+        copy=False,
     )
     notes = fields.Text(string='Description', translate=True)
     profile = fields.Html(sanitize=True)
