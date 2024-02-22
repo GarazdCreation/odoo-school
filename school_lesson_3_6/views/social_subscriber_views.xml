@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="social_subscriber_view_form" model="ir.ui.view">
+        <field name="name">social.subscriber.view.form.inherit.school_lesson_3_6</field>
+        <field name="model">social.subscriber</field>
+        <field name="inherit_id" ref="school_lesson_3_4.social_subscriber_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/div" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_get_promo"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-percent"
+                            string="Promotions"
+                    />
+                </div>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="action_show_subscribers_of_same_social"
+                        class="btn-secondary"
+                        type="object"
+                        icon="fa-users"
+                        string="Promotions"
+                />
+                <button name="get_sorted_list_by_bonus"
+                        class="btn-secondary"
+                        type="object"
+                        string="Show bonuses"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="social_subscriber_view_tree" model="ir.ui.view">
+        <field name="name">social.subscriber.view.tree.inherit.school_lesson_3_6</field>
+        <field name="model">social.subscriber</field>
+        <field name="inherit_id" ref="school_lesson_3_5.social_subscriber_view_tree"/>
+        <field name="arch" type="xml">
+<!--            <xpath expr="//tree" position="attributes">-->
+<!--                <attribute name="multi_edit">1</attribute>-->
+<!--            </xpath>-->
+            <xpath expr="//tree/field" position="before">
+                <header>
+                    <button
+                        name="action_extra_processing"
+                        string="Processing"
+                        type="object"
+                        icon="fa-gears"
+                    />
+                </header>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
