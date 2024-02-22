@@ -6,7 +6,6 @@ from odoo import api, fields, models
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    birthday = fields.Date(required=True)  # Rewrite a parameter of an existing field
     gender = fields.Selection(
         selection=[
             ('male', 'Male'),

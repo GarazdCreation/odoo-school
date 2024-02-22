@@ -17,7 +17,7 @@ class SocialSubscriber(models.Model):
     def _get_allowed_country(self):
         return self.env.ref('base.us') + self.env.ref('base.ua') + self.env.ref('base.ca')
 
-    nickname = fields.Char(copy=False)
+    nickname = fields.Char(copy=False)  # Rewrite a parameter of an existing field
 
     # New approach to get a record name (instead of "name_get" method)
     @api.depends('name', 'nickname')

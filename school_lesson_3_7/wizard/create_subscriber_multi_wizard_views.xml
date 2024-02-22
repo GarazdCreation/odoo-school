@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="create_subscriber_multi_wizard_view_form" model="ir.ui.view">
+        <field name="name">create.subscriber.multi.wizard.view.form</field>
+        <field name="model">create.subscriber.multi.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title mb-2">
+                        <h1><field name="names" placeholder="Names separated by comma"/></h1>
+                    </div>
+                    <group>
+                        <field name="social_service" widget="selection_badge"/>
+                        <field name="country_id" options="{'no_create': True}"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="action_create"
+                            string="Create"
+                            type="object"
+                            icon="fa-plus"
+                            class="btn-primary"
+                    />
+                    <button special="cancel" class="oe_link" string="Close"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- CASE 1: Add the wizard menu to the Tree anf Form views of the "social.subscriber" model -->
+    <record id="action_create_subscriber_multi_wizard" model="ir.actions.act_window">
+        <field name="name">Add Subscribers</field>
+        <field name="res_model">create.subscriber.multi.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="school_lesson_3_1.model_social_subscriber"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="binding_type">action</field>
+    </record>
+
+    <!-- CASE 2: Call the wizard via a server action, that is linked to the Configuration submenu -->
+    <record id="server_action_create_subscriber_multi_wizard" model="ir.actions.server">
+        <field name="name">Add Subscribers</field>
+        <field name="model_id" ref="model_create_subscriber_multi_wizard"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = model.action_open_wizard()
+        </field>
+    </record>
+    <record id="menu_create_subscriber_multi_wizard" model="ir.ui.menu">
+        <field name="name">Add Subscribers</field>
+        <field name="parent_id" ref="school_lesson_3_4.menu_social_config"/>
+        <field name="action" ref="server_action_create_subscriber_multi_wizard"/>
+        <field name="sequence" eval="1"/>
+    </record>
+
+</odoo>
+
