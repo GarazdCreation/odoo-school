@@ -51,7 +51,3 @@ class SocialSubscriber(models.Model):
         #   - <callable> -- a callable whose first and only argument will be the set of records containing the
         #     specified Selection option, for custom processing
     )
-
-
-
-

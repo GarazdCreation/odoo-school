@@ -42,6 +42,8 @@ class SocialSubscriber(models.Model):
                 })
             # Check the "bank_id" param
             if 'bank_id' in vals:
+                # flake8: noqa: F841
+                # pylint: disable-msg=unused-variable
                 bank = self.env['res.bank'].browse(vals['bank_id'])
                 # Do some actions with this bank record
         return super(SocialSubscriber, self).create(vals_list)
@@ -77,4 +79,3 @@ class SocialSubscriber(models.Model):
         subscriber_with_bonus = self.filtered('client_bonus')
         subscriber_with_bonus.write({'active': False})
         return super(SocialSubscriber, self - subscriber_with_bonus).unlink()
-

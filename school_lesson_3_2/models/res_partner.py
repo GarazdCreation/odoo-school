@@ -13,7 +13,6 @@ class ResPartner(models.Model):
             ('female', 'Female'),
             ('other', 'Other/Undefined'),
         ],
-        string='Gender',
         default='other',
     )
     join_date = fields.Date(default=fields.Date.today)

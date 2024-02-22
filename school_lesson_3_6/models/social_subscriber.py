@@ -38,12 +38,10 @@ class SocialSubscriber(models.Model):
         sorted_by_bonus_list = subscribers.sorted(
             key=lambda s: s.client_bonus, reverse=True,
         ).mapped('client_bonus')
-        # _logger.info("--- Subscriber Sorted List ---\n%s", '\n'.join(sorted_by_bonus_list))
-        raise UserError(_(
-            "Subscriber Sorted List: %s",
-            sorted_by_bonus_list,
-        ))
+        _logger.info("Subscriber Sorted List: %s", sorted_by_bonus_list)
+        raise UserError(_("Subscriber Sorted List: %s", sorted_by_bonus_list))
 
+    # pylint: disable-msg=unused-variable,unnecessary-pass
     def action_extra_processing(self):
         # flake8: noqa: E501
         domain = [('id', 'in', self._context.get('active_ids', []))]

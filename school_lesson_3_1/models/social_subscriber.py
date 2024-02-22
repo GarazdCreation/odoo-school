@@ -22,4 +22,3 @@ class SocialSubscriber(models.Model):
         default='undefined',
         required=True,
     )
-

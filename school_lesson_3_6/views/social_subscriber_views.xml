@@ -37,9 +37,6 @@
         <field name="model">social.subscriber</field>
         <field name="inherit_id" ref="school_lesson_3_5.social_subscriber_view_tree"/>
         <field name="arch" type="xml">
-<!--            <xpath expr="//tree" position="attributes">-->
-<!--                <attribute name="multi_edit">1</attribute>-->
-<!--            </xpath>-->
             <xpath expr="//tree/field" position="before">
                 <header>
                     <button
