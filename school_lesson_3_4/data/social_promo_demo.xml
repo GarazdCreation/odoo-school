@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="promo_one_plus_one_tom_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_tom"/>
+        <field name="name">1+1=3</field>
+    </record>
+    <record id="promo_discount_20_tom_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_tom"/>
+        <field name="name">Discount of 20%</field>
+    </record>
+
+    <record id="promo_one_plus_one_alise_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_alise"/>
+        <field name="name">1+1=3</field>
+    </record>
+
+    <record id="promo_one_plus_one_patrick_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_patrick"/>
+        <field name="name">Discount of 20%</field>
+    </record>
+
+    <record id="promo_grab_third_marry_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_marry"/>
+        <field name="name">Grab the third!</field>
+    </record>
+    <record id="promo_one_plus_one_marry_demo" model="social.promo">
+        <field name="subscriber_id" ref="subscriber_marry"/>
+        <field name="name">1+1=3</field>
+    </record>
+
+</odoo>

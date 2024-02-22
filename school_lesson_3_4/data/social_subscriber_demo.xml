@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Tom -->
+    <record id="subscriber_tom" model="social.subscriber">
+        <field name="name">Tom</field>
+        <field name="social_service">instagram</field>
+        <field name="nickname">tom-cat</field>
+        <field name="birthday" eval="(datetime.now() - timedelta(days=365*18)).strftime('%Y-%m-%d')"/>
+        <field name="photo" type="base64" file="base/static/img/res_partner_address_10.jpg"/>
+        <field name="notes">Loyal subscriber with the high activity.</field>
+        <field name="profile"><![CDATA[
+<h3 class="my-3">Subscriber Profile</h3>
+<p>Activity: 90 %</p>
+<p>Loyalty: 75 %</p>
+]]></field>
+        <field name="client_bonus">25.0</field>
+        <field name="start_date" eval="datetime.now().strftime('%Y-%m-%d')"/>
+        <field name="end_date" eval="(datetime.now() + timedelta(days=30)).strftime('%Y-%m-%d')"/>
+        <field name="bank_id" ref="base.bank_bnp"/>
+        <field name="language_ids" eval="[Command.link(ref('base.lang_en'))]"/>
+        <field name="is_confirmed" eval="True"/>
+        <field name="sequence">1</field>
+    </record>
+
+    <!-- Alise -->
+    <record id="subscriber_alise" model="social.subscriber">
+        <field name="name">Alise</field>
+        <field name="social_service">facebook</field>
+        <field name="nickname">Ms. Fox</field>
+        <field name="birthday" eval="(datetime.now() - timedelta(days=365*27)).strftime('%Y-%m-%d')"/>
+        <field name="photo" type="base64" file="base/static/img/res_partner_address_13.jpg"/>
+        <field name="notes">Loyal subscriber with the low activity.</field>
+        <field name="profile"><![CDATA[
+<h3 class="my-3">Subscriber Profile</h3>
+<p>Activity: 35 %</p>
+<p>Loyalty: 51 %</p>
+]]></field>
+        <field name="client_bonus">50.5</field>
+        <field name="start_date" eval="(datetime.now() - timedelta(days=10)).strftime('%Y-%m-%d')"/>
+        <field name="end_date" eval="(datetime.now() + timedelta(days=10)).strftime('%Y-%m-%d')"/>
+        <field name="bank_id" ref="base.bank_ing"/>
+        <field name="language_ids" eval="[Command.link(ref('base.lang_en'))]"/>
+        <field name="sequence">2</field>
+    </record>
+
+    <!-- John -->
+    <record id="subscriber_john" model="social.subscriber">
+        <field name="name">John Doe</field>
+        <field name="social_service">tiktok</field>
+        <field name="nickname">jonny</field>
+        <field name="birthday" eval="(datetime.now() - timedelta(days=365*27)).strftime('%Y-%m-%d')"/>
+        <field name="photo" type="base64" file="base/static/img/res_partner_address_11.jpg"/>
+        <field name="notes">Loyal subscriber with the average activity.</field>
+        <field name="profile"><![CDATA[
+<h3 class="my-3">Subscriber Profile</h3>
+<p>Activity: 57 %</p>
+<p>Loyalty: 71 %</p>
+]]></field>
+        <field name="client_bonus">120.2</field>
+        <field name="start_date" eval="(datetime.now() - timedelta(days=3)).strftime('%Y-%m-%d')"/>
+        <field name="end_date" eval="(datetime.now() + timedelta(days=40)).strftime('%Y-%m-%d')"/>
+        <field name="bank_id" ref="base.bank_ing"/>
+        <field name="language_ids" eval="[Command.link(ref('base.lang_en'))]"/>
+        <field name="sequence">3</field>
+    </record>
+
+    <!-- Patrick -->
+    <record id="subscriber_patrick" model="social.subscriber">
+        <field name="name">Patrick</field>
+        <field name="social_service">facebook</field>
+        <field name="nickname">Ms. Fox</field>
+        <field name="birthday" eval="(datetime.now() - timedelta(days=365*38)).strftime('%Y-%m-%d')"/>
+        <field name="photo" type="base64" file="base/static/img/res_partner_address_15.jpg"/>
+        <field name="notes">Not loyal subscriber with the high activity.</field>
+        <field name="profile"><![CDATA[
+<h3 class="my-3">Subscriber Profile</h3>
+<p>Activity: 85 %</p>
+<p>Loyalty: 12 %</p>
+]]></field>
+        <field name="client_bonus">34.55</field>
+        <field name="start_date" eval="(datetime.now() - timedelta(days=10)).strftime('%Y-%m-%d')"/>
+        <field name="end_date" eval="(datetime.now() + timedelta(days=10)).strftime('%Y-%m-%d')"/>
+        <field name="bank_id" ref="base.bank_ing"/>
+        <field name="language_ids" eval="[Command.link(ref('base.lang_en'))]"/>
+        <field name="is_confirmed" eval="True"/>
+        <field name="sequence">4</field>
+    </record>
+
+    <!-- Marry -->
+    <record id="subscriber_marry" model="social.subscriber">
+        <field name="name">Marry</field>
+        <field name="social_service">youtube</field>
+        <field name="nickname">SmileMary</field>
+        <field name="birthday" eval="(datetime.now() - timedelta(days=365*45)).strftime('%Y-%m-%d')"/>
+        <field name="photo" type="base64" file="base/static/img/res_partner_address_33.jpg"/>
+        <field name="notes">Not loyal subscriber with the low activity.</field>
+        <field name="profile"><![CDATA[
+<h3 class="my-3">Subscriber Profile</h3>
+<p>Activity: 15 %</p>
+<p>Loyalty: 9 %</p>
+]]></field>
+        <field name="client_bonus">5.1</field>
+        <field name="start_date" eval="(datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')"/>
+        <field name="end_date" eval="(datetime.now() + timedelta(days=2)).strftime('%Y-%m-%d')"/>
+        <field name="bank_id" ref="base.bank_bnp"/>
+        <field name="language_ids" eval="[Command.link(ref('base.lang_en'))]"/>
+        <field name="sequence">5</field>
+    </record>
+
+</odoo>

@@ -25,12 +25,12 @@
                 <page string="Fields" name="regular_fields">
                     <group>
                         <group>
-                            <field name="start_date" string="Period" widget="daterange" options="{'end_date_field': 'end_date'}" required="start_date or end_date" />
-                            <field name="end_date" invisible="1" required="start_date"/>
+                            <field name="passport"/>
                         </group>
                         <group>
                             <field name="client_bonus" widget="monetary" options="{'field_digits': True}"/>
-                            <field name="passport"/>
+                            <field name="start_date" string="Valid Period" widget="daterange" options="{'end_date_field': 'end_date'}" required="start_date or end_date" />
+                            <field name="end_date" invisible="1" required="start_date"/>
                         </group>
                     </group>
                     <separator string="Notes"/>

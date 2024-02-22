@@ -22,6 +22,8 @@ class SocialSubscriber(models.Model):
         readonly=True,
         copy=False,
     )
+    start_date = fields.Date(string='Bonus is valid from')
+    end_date = fields.Date(string='Bonus is valid to')
     notes = fields.Text(string='Description', translate=True)
     profile = fields.Html(sanitize=True)
     passport = fields.Binary(attachment=True)
@@ -49,8 +51,6 @@ class SocialSubscriber(models.Model):
         #   - <callable> -- a callable whose first and only argument will be the set of records containing the
         #     specified Selection option, for custom processing
     )
-    start_date = fields.Date(string='Started')
-    end_date = fields.Date(string='Finished')
 
 
 

@@ -19,6 +19,10 @@
         'views/social_subscriber_views.xml',
         'views/social_promo_views.xml',
     ],
+    'demo': [
+        'data/social_subscriber_demo.xml',
+        'data/social_promo_demo.xml',
+    ],
     'support': 'support@garazd.biz',
     'application': False,
     'installable': True,

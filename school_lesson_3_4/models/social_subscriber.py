@@ -39,7 +39,6 @@ class SocialSubscriber(models.Model):
     res_model = fields.Char(string='Model Name', related='res_model_id.model', store=True, index=True, readonly=True)
     res_id = fields.Many2oneReference(string='Resource ID', model_field='res_model', index=True)
     resource_ref = fields.Reference(
-        string='Resource Ref',
         selection='_selection_target_model',
         compute='_compute_resource_ref',
         readonly=True,

@@ -18,7 +18,7 @@
                     </group>
                     <separator string="One2many"/>
                     <button name="action_remove_promo"
-                            string="Remove"
+                            string="Remove All"
                             type="object"
                             class="btn-sm btn-primary"
                             icon="fa-trash"

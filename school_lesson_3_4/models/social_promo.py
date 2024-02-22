@@ -11,4 +11,3 @@ class SocialPromo(models.Model):
         ondelete='cascade',
         required=True,
     )
-
