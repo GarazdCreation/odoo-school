@@ -1,5 +1,5 @@
 # Copyright © 2022 Garazd Creation (<https://garazd.biz>)
-# @author: Yurii Razumovskyi (<support@garazd.biz>)
+# @author: Yurii Razumovskyi (<school@garazd.biz>)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
 
 {
@@ -12,13 +12,13 @@
     'author': 'Garazd Creation',
     'website': 'https://garazd.biz',
     'depends': [
-        'contacts',
+        'school_lesson_3_6',
     ],
     'data': [
         'security/ir.model.access.csv',
         'wizard/create_subscriber_multi_wizard_views.xml',
     ],
-    'support': 'support@garazd.biz',
+    'support': 'school@garazd.biz',
     'application': False,
     'installable': True,
     'auto_install': False,

@@ -1,5 +1,5 @@
 # Copyright © 2024 Garazd Creation (https://garazd.biz)
-# @author: Yurii Razumovskyi (support@garazd.biz)
+# @author: Yurii Razumovskyi (school@garazd.biz)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.html).
 
 {
@@ -23,7 +23,7 @@
         'data/social_subscriber_demo.xml',
         'data/social_promo_demo.xml',
     ],
-    'support': 'support@garazd.biz',
+    'support': 'school@garazd.biz',
     'application': False,
     'installable': True,
     'auto_install': False,

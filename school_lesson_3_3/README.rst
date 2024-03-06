@@ -46,4 +46,4 @@ Authors
 Contributors
 ------------
 
-* Yurii Razumovskyi <support@garazd.biz>
+* Yurii Razumovskyi <school@garazd.biz>
