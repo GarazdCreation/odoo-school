@@ -27,6 +27,7 @@
     <record id="subscriber_alise" model="social.subscriber">
         <field name="name">Alise</field>
         <field name="social_service">facebook</field>
+        <field name="state">registered</field>
         <field name="nickname">Ms. Fox</field>
         <field name="birthday" eval="(datetime.now() - timedelta(days=365*27)).strftime('%Y-%m-%d')"/>
         <field name="photo" type="base64" file="base/static/img/res_partner_address_13.jpg"/>
@@ -48,6 +49,7 @@
     <record id="subscriber_john" model="social.subscriber">
         <field name="name">John Doe</field>
         <field name="social_service">tiktok</field>
+        <field name="state">registered</field>
         <field name="nickname">jonny</field>
         <field name="birthday" eval="(datetime.now() - timedelta(days=365*27)).strftime('%Y-%m-%d')"/>
         <field name="photo" type="base64" file="base/static/img/res_partner_address_11.jpg"/>
