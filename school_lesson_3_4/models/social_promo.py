@@ -11,3 +11,4 @@ class SocialPromo(models.Model):
         ondelete='cascade',
         required=True,
     )
+    color = fields.Integer(string='Color Index', default=0)
