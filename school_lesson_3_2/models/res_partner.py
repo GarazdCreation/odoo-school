@@ -32,8 +32,9 @@ class ResPartner(models.Model):
         store=True,
     )
     client_currency_id = fields.Many2one(
-        related='country_id.currency_id',
-        string='Local Currency',
+        comodel_name='res.currency',
+        default=lambda self: self.env.ref('base.USD').id,
+        string='Bonus Currency',
     )
 
     @api.depends('join_date')
