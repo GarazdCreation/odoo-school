@@ -71,6 +71,8 @@
                 <field name="nickname" optional="show"/>
             </xpath>
             <xpath expr="//field[@name='birthday']" position="after">
+                <field name="client_currency_id" column_invisible="1"/>
+                <field name="client_bonus" widget="monetary" sum="Total Bonus Amount" optional="show"/>
                 <field name="state"/>
             </xpath>
         </field>
